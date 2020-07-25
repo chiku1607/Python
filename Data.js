@@ -8,10 +8,10 @@ var firebaseConfig = {
     appId: "1:616100050054:web:6325e24a87d1013f05cd07",
     measurementId: "G-9ENETHY2JP"
 };
-firebare.initiaizer(config);
+firebase.initiaizer(config);
 
 // reference messages collection
-var messagesRef = firebare.database().ref('messages');
+var messagesRef = firebase.database().ref('messages');
 
 // Listen for form submit
 document.getElementById('Contact Form').addEventListener('submit',SubmitForm);
