@@ -1,0 +1,82 @@
+<Doctype! html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title<>Contact Form</title>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+
+    </head>
+    <body>
+        <form id="Contact Form">
+        <div class="wrapper">
+        <div class="Contact-Form">
+            <div class="title">Contact Form</div>
+            
+            <div class="input-fields">
+                <div class="items">
+                    <label for="First Name" class="label">First Name</label>
+                    <input id="FirstName" type="text" name="FirstName" placeholder="First Name" required class="input">
+                </div>
+                <div class="items">
+                    <label for="Last Name" class="label">Last Name</label>
+                    <input id="LastName" type="text" name="LastName" placeholder="Last Name" required class="input">
+                </div>
+                <div class="items">
+                    <label for="Email Address" class="label">Emai Address</label>
+                    <input id="EmailAddress" type="email" name="EmaiAddress" placeholder="Emai Address" required class="input">
+                </div>
+                <div class="items">
+                    <label for="Password" class="label">Password</label>
+                    <input id="Password" type="text" name="Password" placeholder="Password" required class="input">
+                </div>
+                <div class="items">
+                    <label for="Confirm Password" class="label">Confirm Password</label>
+                    <input id="ConfirmPassword" type="text" name="ConfirmPassword" placeholder="Confirm Password" required class="input">
+                </div>
+                
+                <div class="items">
+                    <label for="Mobile Number" class="label">Mobile Number</label>
+                    <input id="MobileNumber" type="number" name="MobileNumber" placeholder="Mobie Number" required class="input">
+                </div>
+                <div class="items">
+                    <label for="Message" class="label">Message</label>
+                    <textarea id="Message" type="text" name="Message" placeholder="Type your message here...." required class="text-area"></textarea>
+                </div>
+            </div>
+            <div class="btn" >
+                <input type="submit" id="button">
+            </div>
+            
+        </div>
+        </div>
+    </form>
+
+    <!--code to show popup sfter submit-->
+    <div class="alert">Your Message has been Sent</div>
+    
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDk0D7ScuLDGkxnT7yA16jo3D39oVC7_sY",
+    authDomain: "contact-form-2058c.firebaseapp.com",
+    databaseURL: "https://contact-form-2058c.firebaseio.com",
+    projectId: "contact-form-2058c",
+    storageBucket: "contact-form-2058c.appspot.com",
+    messagingSenderId: "616100050054",
+    appId: "1:616100050054:web:6325e24a87d1013f05cd07",
+    measurementId: "G-9ENETHY2JP"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const DB=firebase.firestore();
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<script src="Data.js"></script>
+    </body>
+</html>
